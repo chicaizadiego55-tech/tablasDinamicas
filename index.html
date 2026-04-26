@@ -3,18 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tabla del 3</title>
+  <title>Tablas de Multiplicar</title>
   <link rel="stylesheet" href="multiplicar.css">
   <script src="multiplicar.js" defer></script>
 </head>
 <body>
-
-  <button class="btn"   onclick="generarTablas()">PROBAR</button>
-
-  <div class="contenedor" id="divContenedor"></div>
+    
+  <div class="instrucciones">
+    <p>🎯 Escribe un número del 1 al 12 y presiona <strong>PROBAR</strong></p>
   </div>
-<footer>
-  <p>&copy;2026 Diego. Todos los derechos reservados.</p>
-</footer>
+
+  <div class="caja-input">
+    <input type="number" id="txtNumero" placeholder="¿Qué tabla quieres ver? 🔢" min="1" max="12"/>
+    <p class="ayuda">👆 Escribe aquí tu número favorito</p>
+  </div>
+
+  <button class="btn" onclick="generarTablas()">⭐ PROBAR ⭐</button>
+
+  <div class="contenedor" id="divContenedor">
+    <p class="mensaje-bienvenida">🌈 ¡Hola! Escribe un número arriba y presiona PROBAR para ver su tabla</p>
+  </div>
+
+  
+
 </body>
+<footer>
+    <p>&copy; 2026 Diego. Todos los derechos reservados.</p>
+  </footer>
 </html>
